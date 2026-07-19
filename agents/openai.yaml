@@ -1,0 +1,4 @@
+interface:
+  display_name: "机会灯塔 Job Search"
+  short_description: "用自然语言调用机会灯塔，搜索、比较并追踪公开招聘岗位"
+  default_prompt: "请用机会灯塔帮我宽松搜索匹配的岗位，并说明匹配证据和风险。"
