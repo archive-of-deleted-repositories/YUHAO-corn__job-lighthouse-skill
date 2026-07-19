@@ -135,7 +135,7 @@ def print_search(value: dict[str, Any]) -> None:
         job = item.get("job") or {}
         analysis = ai_jobs.get(job.get("id"), {})
         print(f"\n{index}. [{item.get('score', 0)}] {job.get('title', '未命名')} · {job.get('company', '')} · {job.get('locationText', '')}")
-        reason = analysis.get("match") or "、".join(item.get("evidence", [])[:5])
+        reason = analysis.get("matchReason") or "、".join(item.get("evidence", [])[:5])
         if reason:
             print(f"   匹配：{reason}")
         risks = list(dict.fromkeys((analysis.get("risks") or []) + (item.get("risks") or [])))
